@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
+        "aws/aws-sdk-php": "^3.304",
         "beyondcode/laravel-websockets": "^2.0@beta",
         "doctrine/dbal": "^3.8",
         "fideloper/proxy": "^4.2",
@@ -16,7 +17,12 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
+        "league/oauth2-server": "^3.2",
+        "mailersend/laravel-driver": "1.x-dev",
         "ramsey/uuid": "^4.2",
+        "symfony/http-client": "^5.4",
+        "symfony/mailgun-mailer": "^5.4",
+        "symfony/postmark-mailer": "^5.4",
         "tymon/jwt-auth": "1.0.2"
     },
     "require-dev": {
@@ -29,7 +35,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "extra": {
         "laravel": {
